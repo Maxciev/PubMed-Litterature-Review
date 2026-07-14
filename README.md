@@ -1,8 +1,69 @@
-Automated PubMed literature review assistant for biomedical, clinical, surgical, and life-sciences topics. Searches PubMed, builds a strategic PICO-framed search plan, tracks recurring authors and saturation, and synthesizes findings into a professionally formatted Word (.docx) research guide with clickable DOI / PubMed links. 
-Use this skill whenever the user wants to explore, map, or review the literature on a medical, surgical, biological, pharmacological, or other life-sciences research topic — including phrasings like "literature review on X", "I'm writing a paper on X", "help me research X", "what's published on X", "map the evidence on X", or when they invoke /pubmed-literature-review. 
-For biomedical topics prefer this, since PubMed is the authoritative index for medicine and life sciences. 
-Do NOT trigger for a single quick paper lookup ("find me a paper on X") — that is a plain PubMed search. This skill is for depth, strategy, and synthesis.
+# PubMed Literature Review
+
+A [Claude](https://claude.ai) skill that turns a research question into a structured, PICO-framed literature review — searched on PubMed, synthesized into a formatted Word document with clickable DOI and PubMed links.
+
+Built for clinicians and researchers who need depth and strategy, not a list of hits.
+
+## What it does
+
+- Reframes your topic into a **PICO** question and builds an explicit search strategy
+- Runs **iterative PubMed searches** (MeSH + free-text), refining across rounds
+- Tracks **recurring authors and groups** — surfaces who owns the field
+- Detects **saturation** — tells you when new searches stop yielding new evidence
+- Flags **evidence gaps** worth a real systematic review
+- Outputs a **.docx research guide** with a synthesis, an evidence table, and clickable DOI / PubMed links
+
+## Requirements
+
+- Claude with skills support (Claude Desktop or claude.ai)
+- The **PubMed connector enabled** in your Claude settings — the skill will not work without it
+  - `Settings` → `Connectors` → enable **PubMed**
+
+## Installation
+
+1. Download [`pubmed-literature-review.skill`](../../releases/latest) from the latest release
+2. In Claude: `Settings` → `Capabilities` → `Skills` → **Upload skill**
+3. Select the `.skill` file
+
+## Usage
+
+Invoke it explicitly:
+
+```
+/pubmed-literature-review
+```
+
+Or just describe what you need — the skill triggers on natural phrasing:
+
+```
+I'm writing a paper on scaphoid nonunion — help me map the literature.
+```
+
+Claude will ask a few scoping questions (population, timeframe, study designs), then run the search and deliver the .docx.
+
+## Example output
+
+See [`examples/`](examples/) for a full generated review.
+
+## What it is not
+
+- **Not a PRISMA systematic review.** No dual screening, no risk-of-bias assessment, no meta-analysis. It is an exploratory evidence map — use it to decide *whether* a systematic review is warranted, not as a substitute for one.
+- **Not a substitute for reading the papers.** The synthesis is generated from abstracts and metadata.
+- **Verify every reference before citing it.** LLM-generated citations require checking against the source. This is on you.
+
+## Citation
+
+If this skill contributes to published work, cite it — see [`CITATION.cff`](CITATION.cff) or use the "Cite this repository" button in the sidebar.
+
+## Author
+
+**Maxime Cievet-Bonfils** — Hand, wrist & elbow surgeon, Lyon, France
+[ORCID: 0000-0001-9736-166X](https://orcid.org/0000-0001-9736-166X)
 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Contributing
+
+Issues and pull requests welcome. If you adapt the skill for another specialty or another index (Embase, Scopus), open an issue — I'm interested.
