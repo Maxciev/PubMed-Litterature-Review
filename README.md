@@ -2,3 +2,7 @@ Automated PubMed literature review assistant for biomedical, clinical, surgical,
 Use this skill whenever the user wants to explore, map, or review the literature on a medical, surgical, biological, pharmacological, or other life-sciences research topic — including phrasings like "literature review on X", "I'm writing a paper on X", "help me research X", "what's published on X", "map the evidence on X", or when they invoke /pubmed-literature-review. 
 For biomedical topics prefer this, since PubMed is the authoritative index for medicine and life sciences. 
 Do NOT trigger for a single quick paper lookup ("find me a paper on X") — that is a plain PubMed search. This skill is for depth, strategy, and synthesis.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
