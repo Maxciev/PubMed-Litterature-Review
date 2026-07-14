@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these skills, please cite as below."
+authors:
+  - family-names: "Cievet-Bonfils"
+    given-names: "Maxime"
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+title: "PubMed-Litterature-Review"
+version: 1.0.0
+date-released: 2026-07-14
+url: "https://github.com/Maxciev/PubMed-Litterature-Review"
+license: MIT
