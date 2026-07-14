@@ -1,0 +1,53 @@
+# === DONNÉES SENSIBLES — PRIORITÉ ABSOLUE ===
+*.xlsx
+*.xls
+*.csv
+*.numbers
+*.pdf
+*.docx
+*.doc
+*.pptx
+data/
+donnees/
+cro/
+CRO/
+patients/
+raw/
+output/
+outputs/
+exports/
+*_anonymized.*
+*_anonymise.*
+
+# === SECRETS ===
+.env
+.env.*
+*.key
+*.pem
+credentials*
+config.local.*
+secrets*
+proxy_credentials*
+
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# === OS / ÉDITEURS ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# === LOGS / TEMP ===
+*.log
+tmp/
+temp/
+.cache/
